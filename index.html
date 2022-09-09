@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        var a = 10
+        var b = 2.0
+        var s = "xin chào lớp phát triển ứng dụng web nhóm 06"
+        var s1 = "buổi học số 08"
+        const h = 20
+            //comment trên 1 dòng
+            /*comment trên nhiều dòng*/
+            //document.write(s + s1)
+        console.log(s)
+            /*function tinhtong(x,y){
+                return x+y
+            }*/
+            //document.writeln(tinhtong(12,24))
+        function tinhtong() {
+            var a = Number(document.getElementById("a").value);
+            var x = document.getElementsByName("so_a").value;
+            var b = Number(document.getElementById("b").value);
+            var s = a + b
+            alert("tổng của 2 số a và b là: " + s)
+        }
+
+        function get_content() {
+            //lấy giá trị của ô nhập liêu
+            var x = document.getElementById("nd").value
+                //đưa giá trị của x vào hiển thị trong thẻ h1
+            document.getElementById("show_nd").innerHTML = x
+                //document.getElementById("show_nd").innerHTML = document.getElementById("nd").value
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <form action="">
+        nhập vào số a:
+        <input type="text" name="so_a" id="a"> nhập vào số b:
+        <input type="text" name="" id="b">
+        <button onclick="tinhtong();">Tính tổng</button>
+        <input onkeydown="get_content();" type="text" name="" id="nd">
+    </form>
+    <h1 id="show_nd"></h1>
+    <p id="p">Xin chào bạn</p>
+    <button class="b" id="bt">Lấy giá trị thẻ p</button>
+    <script>
+        $(document).ready(function() {
+            $("#bt").click(function() {
+                alert($("#a").val())
+            })
+        })
+    </script>
+
+
+    <button type="button" id="B">click </button>
+    <button type="button" id="R">2 </button>
+    <button type="button" id=Y>1 </button>
+    <style>
+        #B {
+            width: 200px;
+            background-color: blue;
+        }
+        
+        #R {
+            background-color: rgb(248, 11, 11);
+        }
+        
+        #Y {
+            background-color: rgb(227, 251, 7);
+        }
+    </style>
+
+
+</body>
+
+
+</html>

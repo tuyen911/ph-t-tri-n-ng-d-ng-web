@@ -1,0 +1,16 @@
+@charset "utf_8";
+body {
+    margin: 30px;
+}
+
+#bannner {
+    width: 100px;
+    height: 600px;
+    background-color: blue;
+}
+
+@media screen and(max-width:500px) {
+    body {
+        color: brown;
+    }
+}
